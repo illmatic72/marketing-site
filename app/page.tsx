@@ -78,7 +78,7 @@ export default function Home() {
           <img src="/al-logo-full.png" alt="ALcounting" className="h-12 w-auto" />
           <a
             href={SIGNUP_URL}
-            className="bg-[#1F4E5C] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#163942] transition-colors"
+            className="bg-[#0D7490] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#0A5F73] transition-colors"
           >
             Start Free Trial →
           </a>
@@ -86,9 +86,9 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="bg-[#1F4E5C]">
+      <section className="bg-[#0D7490]">
         <div className="max-w-5xl mx-auto px-6 pt-20 pb-20 text-center">
-          <p className="text-sm font-semibold text-[#7DD3DE] uppercase tracking-widest mb-5">
+          <p className="text-sm font-semibold text-[#67E8F9] uppercase tracking-widest mb-5">
             ALcounting — Built for small business owners
           </p>
           <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight max-w-3xl mx-auto">
@@ -101,7 +101,7 @@ export default function Home() {
           <div className="mt-10 flex flex-col items-center gap-3">
             <a
               href={SIGNUP_URL}
-              className="bg-white text-[#1F4E5C] font-bold text-base px-8 py-3.5 rounded-lg hover:bg-slate-100 transition-colors shadow-lg"
+              className="bg-white text-[#0D7490] font-bold text-base px-8 py-3.5 rounded-lg hover:bg-slate-100 transition-colors shadow-lg"
             >
               Start your free 14-day trial →
             </a>
@@ -111,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* App screenshot placeholder */}
-      <section className="bg-[#163942]">
+      <section className="bg-[#0A5F73]">
         <div className="max-w-5xl mx-auto px-6 pb-0 flex justify-center">
           <div className="w-full max-w-4xl bg-slate-100 rounded-t-2xl border border-slate-200 shadow-2xl overflow-hidden" style={{minHeight: '340px'}}>
             {/* Replace this div with an <img> tag pointing to your screenshot once you have one */}
@@ -154,7 +154,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {HOW_IT_WORKS.map(s => (
             <div key={s.step} className="text-center">
-              <div className="w-12 h-12 rounded-full bg-[#1F4E5C] text-white font-bold text-lg flex items-center justify-center mx-auto mb-4 shadow-md">
+              <div className="w-12 h-12 rounded-full bg-[#0D7490] text-white font-bold text-lg flex items-center justify-center mx-auto mb-4 shadow-md">
                 {s.step}
               </div>
               <h3 className="font-semibold text-slate-900 mb-2">{s.title}</h3>
@@ -165,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* Brand / positioning strip */}
-      <section className="bg-[#1F4E5C]">
+      <section className="bg-[#0D7490]">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
           <img src="/al-logo-full.png" alt="ALcounting" className="h-10 w-auto mx-auto mb-6 opacity-90" />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
@@ -178,7 +178,7 @@ export default function Home() {
           </p>
           <a
             href={SIGNUP_URL}
-            className="inline-block bg-white text-[#1F4E5C] font-bold px-8 py-3.5 rounded-lg hover:bg-slate-100 transition-colors shadow-lg"
+            className="inline-block bg-white text-[#0D7490] font-bold px-8 py-3.5 rounded-lg hover:bg-slate-100 transition-colors shadow-lg"
           >
             Try ALcounting free for 14 days →
           </a>
@@ -193,13 +193,13 @@ export default function Home() {
             One flat monthly plan. No per-client fees, no seat limits, no surprise add-ons.
             Start with a free 14-day trial and see if ALcounting fits the way you work.
           </p>
-          <div className="inline-flex flex-col items-center bg-white border-2 border-[#1F4E5C] rounded-xl px-10 py-8 shadow-md">
-            <span className="text-sm font-bold text-[#1F4E5C] uppercase tracking-widest mb-3">Free Trial</span>
+          <div className="inline-flex flex-col items-center bg-white border-2 border-[#0D7490] rounded-xl px-10 py-8 shadow-md">
+            <span className="text-sm font-bold text-[#0D7490] uppercase tracking-widest mb-3">Free Trial</span>
             <span className="text-5xl font-bold text-slate-900 mb-1">14 days</span>
             <span className="text-slate-500 mb-6">No credit card required</span>
             <a
               href={SIGNUP_URL}
-              className="bg-[#1F4E5C] text-white font-bold px-8 py-3 rounded-lg hover:bg-[#163942] transition-colors w-full text-center"
+              className="bg-[#0D7490] text-white font-bold px-8 py-3 rounded-lg hover:bg-[#0A5F73] transition-colors w-full text-center"
             >
               Start free trial →
             </a>
@@ -232,7 +232,7 @@ export default function Home() {
           </p>
           <a
             href={SIGNUP_URL}
-            className="inline-block bg-[#1F4E5C] text-white font-bold text-base px-10 py-4 rounded-lg hover:bg-[#163942] transition-colors shadow-lg border border-[#2d6b7d]"
+            className="inline-block bg-[#0D7490] text-white font-bold text-base px-10 py-4 rounded-lg hover:bg-[#0A5F73] transition-colors shadow-lg border border-[#1A9DB5]"
           >
             Start free trial — it's free for 14 days →
           </a>
