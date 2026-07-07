@@ -251,4 +251,15 @@ export default function Home() {
             Start free trial — it's free for 14 days →
           </a>
         </div>
-  
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-slate-100">
+        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-slate-400">
+          <span>© {new Date().getFullYear()} ALcounting. All rights reserved.</span>
+          <span>Simple invoicing & bookkeeping for small business owners.</span>
+        </div>
+      </footer>
+    </main>
+  )
+}
