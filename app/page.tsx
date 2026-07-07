@@ -110,20 +110,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* App screenshot placeholder */}
+      {/* App screenshots */}
       <section className="bg-[#0A5F73]">
         <div className="max-w-5xl mx-auto px-6 pb-0 flex justify-center">
-          <div className="w-full max-w-4xl bg-slate-100 rounded-t-2xl border border-slate-200 shadow-2xl overflow-hidden" style={{minHeight: '340px'}}>
-            {/* Replace this div with an <img> tag pointing to your screenshot once you have one */}
-            <div className="flex items-center justify-center h-full min-h-[340px] text-slate-400 text-sm">
-              [ App screenshot goes here ]
-            </div>
+          <div className="w-full max-w-4xl rounded-t-2xl border border-slate-200 shadow-2xl overflow-hidden">
+            <img src="/landing page 1.png" alt="ALcounting invoice list" className="w-full" />
+          </div>
+        </div>
+      </section>
+
+      {/* Second screenshot */}
+      <section className="bg-slate-50 border-b border-slate-100">
+        <div className="max-w-5xl mx-auto px-6 py-16">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-900 mb-2">Know exactly what you're owed</h2>
+            <p className="text-slate-500">See every open balance at a glance and send reminders in one click.</p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 shadow-lg overflow-hidden">
+            <img src="/landing page 3.png" alt="ALcounting open balance summary" className="w-full" />
           </div>
         </div>
       </section>
 
       {/* Features */}
-      <section className="bg-slate-50 border-y border-slate-100">
+      <section className="bg-white border-y border-slate-100">
         <div className="max-w-5xl mx-auto px-6 py-16">
           <h2 className="text-2xl font-bold text-slate-900 text-center mb-2">
             Everything your back office actually needs
@@ -241,15 +251,4 @@ export default function Home() {
             Start free trial — it's free for 14 days →
           </a>
         </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="border-t border-slate-100">
-        <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-slate-400">
-          <span>© {new Date().getFullYear()} ALcounting. All rights reserved.</span>
-          <span>Simple invoicing & bookkeeping for small business owners.</span>
-        </div>
-      </footer>
-    </main>
-  )
-}
+  
