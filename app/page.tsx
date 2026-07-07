@@ -114,7 +114,7 @@ export default function Home() {
       <section className="bg-[#0A5F73]">
         <div className="max-w-5xl mx-auto px-6 pb-0 flex justify-center">
           <div className="w-full max-w-4xl rounded-t-2xl border border-slate-200 shadow-2xl overflow-hidden">
-            <img src="/landing%20page%201.png" alt="ALcounting invoice list" className="w-full" />
+            <img src="/Landing%20Photo%201.png" alt="ALcounting invoice list" className="w-full" />
           </div>
         </div>
       </section>
@@ -127,7 +127,7 @@ export default function Home() {
             <p className="text-slate-500">See every open balance at a glance and send reminders in one click.</p>
           </div>
           <div className="rounded-2xl border border-slate-200 shadow-lg overflow-hidden">
-            <img src="/landing%20page%203.png" alt="ALcounting open balance summary" className="w-full" />
+            <img src="/Landing%20Photo%203.png" alt="ALcounting open balance summary" className="w-full" />
           </div>
         </div>
       </section>
