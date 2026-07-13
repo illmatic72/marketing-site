@@ -75,7 +75,7 @@ export default function Home() {
       {/* Nav */}
       <header className="bg-white border-b border-slate-100 sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-          <img src="/al-logo-full.png" alt="ALcounting" className="h-12 w-auto" />
+          <img src="/ALcounting-wordmark-navy-cropped.png" alt="ALcounting" className="h-12 w-auto" />
           <a
             href={SIGNUP_URL}
             className="bg-[#0D7490] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#0A5F73] transition-colors"
@@ -177,9 +177,7 @@ export default function Home() {
       {/* Brand / positioning strip */}
       <section className="bg-[#0D7490]">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-          <div className="inline-flex bg-white rounded-xl px-5 py-3 mb-6">
-            <img src="/al-logo-full.png" alt="ALcounting" className="h-10 w-auto" />
-          </div>
+          <img src="/ALcounting-wordmark-white-text.png" alt="ALcounting" className="h-10 w-auto mx-auto mb-6" />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Built for businesses that have outgrown spreadsheets
           </h2>
@@ -235,9 +233,7 @@ export default function Home() {
       {/* Final CTA */}
       <section className="bg-[#101828]">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-          <div className="inline-flex bg-white rounded-xl px-5 py-3 mb-6">
-            <img src="/al-logo-full.png" alt="ALcounting" className="h-10 w-auto" />
-          </div>
+          <img src="/ALcounting-wordmark-white-text.png" alt="ALcounting" className="h-10 w-auto mx-auto mb-6" />
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Ready to get your back office under control?
           </h2>
