@@ -177,7 +177,9 @@ export default function Home() {
       {/* Brand / positioning strip */}
       <section className="bg-[#0D7490]">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-          <img src="/ALcounting-wordmark-white-text.png" alt="ALcounting" className="h-10 w-auto mx-auto mb-6" />
+          <div className="inline-block bg-white rounded-lg px-6 py-3 mb-6">
+            <img src="/ALcounting-wordmark-navy-cropped.png" alt="ALcounting" className="h-10 w-auto" />
+          </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Built for businesses that have outgrown spreadsheets
           </h2>
@@ -233,7 +235,9 @@ export default function Home() {
       {/* Final CTA */}
       <section className="bg-[#101828]">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-          <img src="/ALcounting-wordmark-white-text.png" alt="ALcounting" className="h-10 w-auto mx-auto mb-6" />
+          <div className="inline-block bg-white rounded-lg px-6 py-3 mb-6">
+            <img src="/ALcounting-wordmark-navy-cropped.png" alt="ALcounting" className="h-10 w-auto" />
+          </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Ready to get your back office under control?
           </h2>
