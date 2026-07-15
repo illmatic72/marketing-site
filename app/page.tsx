@@ -257,7 +257,10 @@ export default function Home() {
       <footer className="border-t border-slate-100">
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-sm text-slate-400">
           <span>© {new Date().getFullYear()} ALcounting. All rights reserved.</span>
-          <span>Simple invoicing & bookkeeping for small business owners.</span>
+          <div className="flex items-center gap-4">
+            <a href="/terms" className="hover:text-slate-600">Terms</a>
+            <a href="/privacy" className="hover:text-slate-600">Privacy</a>
+          </div>
         </div>
       </footer>
     </main>
