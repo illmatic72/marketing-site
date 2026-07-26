@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-const SIGNUP_URL = 'https://css-tracker-saas.vercel.app'
+const APP_URL = 'https://app.alcounting.com'
+const SIGNUP_URL = `${APP_URL}/signup`
+const LOGIN_URL = `${APP_URL}/login`
 
 const FEATURES = [
   {
@@ -138,12 +140,20 @@ export default function Home() {
       >
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <img src="/ALcounting-wordmark-navy-cropped.png" alt="ALcounting" className="h-12 w-auto" />
-          <a
-            href={SIGNUP_URL}
-            className="bg-[#0D7490] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#0A5F73] hover:scale-105 active:scale-95 transition-all duration-200"
-          >
-            Start Free Trial →
-          </a>
+          <div className="flex items-center gap-5">
+            
+              href={LOGIN_URL}
+              className="text-sm font-semibold text-slate-600 hover:text-[#0D7490] transition-colors duration-200"
+            >
+              Log In
+            </a>
+            
+              href={SIGNUP_URL}
+              className="bg-[#0D7490] text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-[#0A5F73] hover:scale-105 active:scale-95 transition-all duration-200"
+            >
+              Start Free Trial →
+            </a>
+          </div>
         </div>
       </header>
 
@@ -168,7 +178,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={300}>
             <div className="mt-10 flex flex-col items-center gap-3">
-              <a
+              
                 href={SIGNUP_URL}
                 className="bg-white text-[#0D7490] font-bold text-base px-8 py-3.5 rounded-lg hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg"
               >
@@ -277,7 +287,7 @@ export default function Home() {
               No boardroom. No enterprise pricing. Just a clean, honest tool that helps you
               run your back office the right way.
             </p>
-            <a
+            
               href={SIGNUP_URL}
               className="inline-block bg-white text-[#0D7490] font-bold px-8 py-3.5 rounded-lg hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg"
             >
@@ -302,7 +312,7 @@ export default function Home() {
               <span className="text-sm font-bold text-[#0D7490] uppercase tracking-widest mb-3">Free Trial</span>
               <span className="text-5xl font-bold text-slate-900 mb-1">14 days</span>
               <span className="text-slate-500 mb-6">No credit card required</span>
-              <a
+              
                 href={SIGNUP_URL}
                 className="bg-[#0D7490] text-white font-bold px-8 py-3 rounded-lg hover:bg-[#0A5F73] hover:scale-105 active:scale-95 transition-all duration-200 w-full text-center"
               >
@@ -343,7 +353,7 @@ export default function Home() {
             <p className="text-slate-300 mb-8 max-w-xl mx-auto">
               Start your free 14-day trial today. No credit card, no commitment — just a cleaner way to run your business.
             </p>
-            <a
+            
               href={SIGNUP_URL}
               className="inline-block bg-[#0D7490] text-white font-bold text-base px-10 py-4 rounded-lg hover:bg-[#0A5F73] hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg border border-[#1A9DB5]"
             >
