@@ -52,6 +52,18 @@ const HOW_IT_WORKS = [
   },
 ]
 
+const BRING_OVER = [
+  'Your clients, from a CSV or Excel file',
+  'Your past work and invoice line items, from a CSV or Excel file',
+  'Coming from QuickBooks or another program? Export your data to a spreadsheet there, then import it here',
+]
+
+const GOOD_TO_KNOW = [
+  'There is no direct QuickBooks connection — importing works through spreadsheet files',
+  'Your data is yours: download a complete copy of it as one Excel file, any time you want',
+  'You review everything before any invoices are created',
+]
+
 const FAQS = [
   {
     q: 'Who is ALcounting built for?',
@@ -63,15 +75,27 @@ const FAQS = [
   },
   {
     q: 'Can I bring my existing invoices and clients over?',
-    a: 'Yes. You can import clients and historical line items from a spreadsheet (CSV or Excel) instead of typing everything in by hand.',
+    a: 'Yes. You can import clients and historical line items from a spreadsheet (CSV or Excel) instead of typing everything in by hand. Coming from QuickBooks or another program? Export your data to a spreadsheet from there, then import it here. There is no direct QuickBooks connection.',
   },
   {
     q: 'What does it cost?',
     a: 'Try ALcounting free for 14 days — no credit card required. After that, a single flat monthly plan with no per-client fees and no surprise add-ons.',
   },
   {
-    q: 'Is my data secure?',
-    a: 'Your data is private to your account — every record is scoped to you, and no other user can see it.',
+    q: 'What happens after my 14-day trial?',
+    a: 'Your trial simply ends. Nothing is charged automatically — we never ask for a card up front. To keep going, you choose to subscribe.',
+  },
+  {
+    q: 'Can I get my data out?',
+    a: 'Yes, any time. In Settings, choose Download My Data to save a complete copy of your clients, invoices, transactions and more as one Excel file. Your data is yours.',
+  },
+  {
+    q: 'Is my data private?',
+    a: 'Yes. Your data is private to your account. Each business\'s records are kept separate, and no other ALcounting user can see your clients, invoices, or financial records.',
+  },
+  {
+    q: 'Will ALcounting do my taxes or replace my accountant?',
+    a: 'No. ALcounting is bookkeeping software. It keeps your invoices, payments, and records organized so working with your accountant is easier. It does not provide tax, legal, or accounting advice.',
   },
 ]
 
@@ -269,6 +293,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Switching from spreadsheets or QuickBooks */}
+      <section className="bg-slate-50 border-y border-slate-100">
+        <div className="max-w-5xl mx-auto px-6 py-16">
+          <Reveal>
+            <h2 className="text-2xl font-bold text-slate-900 text-center mb-2">
+              Switching from spreadsheets or QuickBooks?
+            </h2>
+          </Reveal>
+          <Reveal delay={100}>
+            <p className="text-slate-500 text-center max-w-xl mx-auto mb-12">
+              You don't have to start from scratch. Bring your clients and your past work over from a spreadsheet.
+            </p>
+          </Reveal>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <Reveal>
+              <div className="bg-white rounded-xl border border-slate-200 p-6 h-full hover:-translate-y-1 hover:shadow-lg hover:border-[#0D7490]/30 transition-all duration-300">
+                <h3 className="font-semibold text-slate-900 mb-3">What you can bring over</h3>
+                <ul className="space-y-2">
+                  {BRING_OVER.map(item => (
+                    <li key={item} className="flex gap-2 text-sm text-slate-600 leading-relaxed">
+                      <span className="text-[#0D7490] font-bold">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
+            <Reveal delay={100}>
+              <div className="bg-white rounded-xl border border-slate-200 p-6 h-full hover:-translate-y-1 hover:shadow-lg hover:border-[#0D7490]/30 transition-all duration-300">
+                <h3 className="font-semibold text-slate-900 mb-3">Good to know</h3>
+                <ul className="space-y-2">
+                  {GOOD_TO_KNOW.map(item => (
+                    <li key={item} className="flex gap-2 text-sm text-slate-600 leading-relaxed">
+                      <span className="text-[#0D7490] font-bold">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       {/* Brand / positioning strip */}
       <section className="bg-[#0D7490]">
         <div className="max-w-5xl mx-auto px-6 py-16 text-center">
@@ -279,10 +347,15 @@ export default function Home() {
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
               Built for businesses that have outgrown spreadsheets
             </h2>
+            <p className="text-slate-300 max-w-2xl mx-auto leading-relaxed mb-4">
+              Hi, I'm Mike. I've used QuickBooks for over 25 years — first for a telemarketing
+              company I owned, and for the last 10 years for my dad's and my construction safety
+              business. QuickBooks had far more than I ever needed, so I built ALcounting for the
+              way a small business actually works.
+            </p>
             <p className="text-slate-300 max-w-2xl mx-auto leading-relaxed mb-8">
-              ALcounting was built by a small business owner, for small business owners.
-              No boardroom. No enterprise pricing. Just a clean, honest tool that helps you
-              run your back office the right way.
+              No boardroom. No enterprise pricing. Just a clean, honest tool — and our own
+              company runs on it today.
             </p>
             <a href={SIGNUP_URL}
               className="inline-block bg-white text-[#0D7490] font-bold px-8 py-3.5 rounded-lg hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg"
@@ -314,6 +387,10 @@ export default function Home() {
                 Start free trial →
               </a>
             </div>
+            <p className="mt-6 text-sm text-slate-500 max-w-md mx-auto leading-relaxed">
+              <span className="font-semibold text-slate-700">What happens after 14 days?</span>{' '}
+              Nothing is charged automatically. You only pay if you choose to subscribe.
+            </p>
           </Reveal>
         </div>
       </section>
@@ -366,6 +443,9 @@ export default function Home() {
             <a href="/privacy" className="hover:text-slate-600">Privacy</a>
           </div>
         </div>
+        <p className="max-w-5xl mx-auto px-6 pb-8 text-xs text-slate-400 text-center sm:text-left">
+          ALcounting is bookkeeping software, not an accounting or tax firm, and does not provide tax, legal, or accounting advice.
+        </p>
       </footer>
     </main>
   )
