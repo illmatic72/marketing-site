@@ -348,14 +348,16 @@ export default function Home() {
               Built for businesses that have outgrown spreadsheets
             </h2>
             <p className="text-slate-300 max-w-2xl mx-auto leading-relaxed mb-4">
-              Hi, I'm Mike. I've used QuickBooks for over 25 years — first for a telemarketing
-              company I owned, and for the last 10 years for my dad's and my construction safety
-              business. QuickBooks had far more than I ever needed, so I built ALcounting for the
-              way a small business actually works.
+              Hi, I'm Mike. I've been running small businesses on accounting software since 2011 —
+              first my telemarketing company, then in 2019 I helped my father convert our
+              construction safety business. After 15 years, I know how much of it a small business
+              never touches.
             </p>
             <p className="text-slate-300 max-w-2xl mx-auto leading-relaxed mb-8">
-              No boardroom. No enterprise pricing. Just a clean, honest tool — and our own
-              company runs on it today.
+              So I built ALcounting for businesses like ours: owners who can't afford a staff
+              accountant and don't have hours to sit at a computer keeping track of income and
+              expenses. About six months ago I moved our own company onto it, and it handles
+              everything we need — from year-end accounting to monthly expenses.
             </p>
             <a href={SIGNUP_URL}
               className="inline-block bg-white text-[#0D7490] font-bold px-8 py-3.5 rounded-lg hover:bg-slate-100 hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg"
@@ -443,7 +445,7 @@ export default function Home() {
             <a href="/privacy" className="hover:text-slate-600">Privacy</a>
           </div>
         </div>
-        <p className="max-w-5xl mx-auto px-6 pb-8 text-xs text-slate-400 text-center sm:text-left">
+        <p className="max-w-5xl mx-auto px-6 pb-8 text-xs text-slate-400 text-center">
           ALcounting is bookkeeping software, not an accounting or tax firm, and does not provide tax, legal, or accounting advice.
         </p>
       </footer>
